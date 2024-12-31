@@ -52,7 +52,7 @@ export const contact = [
     id: "0",
     title: "Discord",
     iconUrl: discordBlack,
-    url: "https://canary.discord.com/channels/@me",
+    url: "https://discord.gg/qB4YkRcU",
   },
   {
     id: "1",
@@ -72,7 +72,7 @@ export const contactFooter = [
     id: "0",
     title: "Discord",
     iconUrl: discordBlack,
-    url: "https://canary.discord.com/channels/@me",
+    url: "https://discord.gg/qB4YkRcU",
   },
   {
     id: "1",
