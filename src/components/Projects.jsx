@@ -35,14 +35,14 @@ const Projects = () => {
                     {project.skills.map((skill, index) => (
                       <li
                         key={skill.id}
-                        className={`${index === skill.lenght - 1 ? "mr-0 " : "mr-6"}  w-[6rem] h-[5rem] flex flex-col justify-center items-center rounded-lg p-3 bg-n-7/60 transition-all hover:scale-105 hover:bg-yellow-300/10`}
+                        className={`${index === skill.lenght - 1 ? "mr-0 " : "mr-6"}  w-[5rem] h-[4rem] flex flex-col justify-center items-center rounded-lg p-3 bg-n-7/60 transition-all hover:scale-105 hover:bg-yellow-300/10 md:w-[6rem] md:h-[5rem]`}
                       >
                         <img
                           src={skill.img}
                           alt={skill.title}
-                          className="w-[2rem] h-[2rem] mb-2 "
+                          className="w-[2rem] h-[2rem] mb-1 "
                         />
-                        <span className="text-[0.7rem] uppercase">
+                        <span className="text-[0.57rem] uppercase md:text-[0.6rem]">
                           {skill.title}
                         </span>
                       </li>
