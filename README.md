@@ -36,7 +36,7 @@
 
 ## <a name="links">🔗 Links</a>
 
-- [Live Website](https://shawky-13.github.io/CodeAlpha_My_Portfolio_Site/)
+- [Live Website](https://shawky-13.github.io/My_Portfolio/)
 
 <br>
 ## <h2>Contact Me</h2>
