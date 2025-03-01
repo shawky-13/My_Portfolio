@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     define: {
       "process.env": env,
     },
-    base: "/CodeAlpha_My_Portfolio_Site/",
+    base: "/My_Portfolio/",
     plugins: [react()],
   };
 });
