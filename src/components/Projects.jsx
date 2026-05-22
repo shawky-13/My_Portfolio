@@ -54,17 +54,21 @@ const Projects = () => {
                     <a
                       href={project.url}
                       target="_blank"
+                      rel="noreferrer"
                       className="rounded-lg p-3 capitalize bg-n-6/40 transition-all mr-10 hover:bg-yellow-300/10"
                     >
                       live demo
                     </a>
-                    <a
-                      href={project.repo}
-                      className="rounded-lg p-3 bg-n-6/40 transition-all w-[3rem] h-[3rem] hover:bg-yellow-300/10"
-                      target="_blank"
-                    >
-                      <img src={github} alt={"github"} />
-                    </a>
+                    {project.repo && (
+                      <a
+                        href={project.repo}
+                        className="rounded-lg p-3 bg-n-6/40 transition-all w-[3rem] h-[3rem] hover:bg-yellow-300/10"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img src={github} alt={"github"} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

@@ -1,0 +1,56 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#111218"/>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect x="70" y="55" width="1060" height="650" rx="28" fill="#111217" fill-opacity=".9" stroke="#F3CD52" stroke-opacity=".24" stroke-width="2"/>
+  <rect x="95" y="80" width="215" height="600" rx="22" fill="#16181E"/>
+  <text x="125" y="146" fill="#F5F5F7" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">Dashboard</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16">
+    <rect x="125" y="195" width="150" height="38" rx="14" fill="#F3CD52" fill-opacity=".18"/>
+    <text x="145" y="220" fill="#F3CD52">Overview</text>
+    <text x="145" y="282" fill="#8E919A">Products</text>
+    <text x="145" y="344" fill="#8E919A">Orders</text>
+    <text x="145" y="406" fill="#8E919A">Customers</text>
+    <text x="145" y="468" fill="#8E919A">Analytics</text>
+  </g>
+  <text x="355" y="145" fill="#F5F5F7" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">Ecommerce</text>
+  <text x="360" y="180" fill="#8E919A" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sales performance and store insights</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="355" y="215" width="205" height="125" rx="20" fill="#22242C"/>
+    <text x="379" y="259" fill="#8E919A" font-size="14">Revenue</text>
+    <text x="379" y="304" fill="#46D697" font-size="34" font-weight="700">$48.2K</text>
+    <rect x="590" y="215" width="205" height="125" rx="20" fill="#22242C"/>
+    <text x="614" y="259" fill="#8E919A" font-size="14">Orders</text>
+    <text x="614" y="304" fill="#5B9CFF" font-size="34" font-weight="700">1,284</text>
+    <rect x="825" y="215" width="205" height="125" rx="20" fill="#22242C"/>
+    <text x="849" y="259" fill="#8E919A" font-size="14">Customers</text>
+    <text x="849" y="304" fill="#F3CD52" font-size="34" font-weight="700">8,430</text>
+  </g>
+  <rect x="355" y="380" width="500" height="245" rx="22" fill="#22242C"/>
+  <text x="385" y="430" fill="#F5F5F7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sales chart</text>
+  <path d="M390 565L455 510L525 535L600 460L680 485L800 430" stroke="#F3CD52" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F3CD52">
+    <circle cx="390" cy="565" r="8"/>
+    <circle cx="455" cy="510" r="8"/>
+    <circle cx="525" cy="535" r="8"/>
+    <circle cx="600" cy="460" r="8"/>
+    <circle cx="680" cy="485" r="8"/>
+    <circle cx="800" cy="430" r="8"/>
+  </g>
+  <rect x="885" y="380" width="205" height="245" rx="22" fill="#22242C"/>
+  <text x="910" y="430" fill="#F5F5F7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Top Products</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#8E919A">
+    <rect x="910" y="460" width="130" height="14" rx="7" fill="#F3CD52"/>
+    <text x="910" y="494">Item 1</text>
+    <rect x="910" y="505" width="112" height="14" rx="7" fill="#46D697"/>
+    <text x="910" y="539">Item 2</text>
+    <rect x="910" y="550" width="94" height="14" rx="7" fill="#5B9CFF"/>
+    <text x="910" y="584">Item 3</text>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="90" x2="1080" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181A24"/>
+      <stop offset=".55" stop-color="#2A2112"/>
+      <stop offset="1" stop-color="#111218"/>
+    </linearGradient>
+  </defs>
+</svg>

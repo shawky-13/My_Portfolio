@@ -15,6 +15,7 @@ import {
   hoobank,
   space,
   car,
+  dashboard,
   facebook,
   whatsapp,
 } from "../assets/index";
@@ -167,6 +168,30 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    id: "4",
+    image: dashboard,
+    title: "my dashboard",
+    skills: [
+      {
+        id: "0",
+        title: "react",
+        img: react,
+      },
+      {
+        id: "1",
+        title: "vite",
+        img: vite,
+      },
+      {
+        id: "2",
+        title: "tailwindcss",
+        img: tailwindcss,
+      },
+    ],
+    text: "an ecommerce dashboard with a clean interface for tracking sales, orders, customers, and product performance through responsive analytics views.",
+    url: "https://6a0df96e848af050860f3e26--dashboard130.netlify.app/ecommerce",
+  },
   {
     id: "0",
     image: brainwave,

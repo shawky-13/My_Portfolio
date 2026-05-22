@@ -20,6 +20,7 @@ import brainwave from "./projects/brainwave.png";
 import hoobank from "./projects/hoobank.png";
 import space from "./projects/space.png";
 import car from "./projects/car.png";
+import dashboard from "./projects/dashboard.svg";
 
 export {
   discordBlack,
@@ -44,4 +45,5 @@ export {
   hoobank,
   space,
   car,
+  dashboard,
 };
