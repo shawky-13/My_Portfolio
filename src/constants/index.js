@@ -171,7 +171,7 @@ export const projects = [
   {
     id: "4",
     image: dashboard,
-    title: "my dashboard",
+    title: "My dashboard",
     skills: [
       {
         id: "0",
