@@ -23,8 +23,8 @@ const Home = () => {
                 contact me
               </a>
               <a
-                download="Shawky_Mshrif_Frontend_CV.pdf"
-                href="/My_Portfolio/Shawky_Mshrif_Frontend_CV.pdf"
+                download="Shawky_Mshrif_Frontend_CV_v2.pdf"
+                href="/My_Portfolio/Shawky_Mshrif_Frontend_CV_v2.pdf"
                 className="w-[10rem] uppercase text-center text-n-8 font-bold font-code bg-amber-400 rounded-lg p-2 transition-all mb-5 hover:bg-amber-200 md:mb-10 active:scale-95"
               >
                 download my cv
