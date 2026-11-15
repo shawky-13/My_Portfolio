@@ -1,5 +1,5 @@
 import { contact } from "../constants";
-import myPhoto from "../assets/my_photo.png";
+import myPhoto from "../assets/Shawky.jpg";
 import lab from "../assets/labtop.avif";
 import circle from "../assets/arrowCircle.png";
 import Gradient from "./Gradient";
