@@ -13,7 +13,7 @@ const Home = () => {
               hi, i'm shawky mshrif
             </h1>
             <p className=" capitalize body-2 text-n-4/70 mb-5 md:mb-10">
-              junior front end developer
+              junior front end developer | react
             </p>
             <div className="flex justify-between flex-col items-start  md:flex-row">
               <a
