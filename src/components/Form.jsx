@@ -11,33 +11,26 @@ const ContactForm = () => {
     message: "",
   });
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    // note : i used emailjs libirary for collect the form data and recived it into my email
-    // emailjs() => is a function in emailjs libirary for collecting the form data
-    emailjs
-      .sendForm(
+    setFormSubmitted(false);
+    setFormError(null);
+
+    try {
+      const result = await emailjs.sendForm(
         "service_nt3oo48", // service-id
         "template_l9vz4hb", // template-id
         form.current,
-        "lWiRqp-JHI-566fpM"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormSubmitted(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setFormError(true);
-        }
+        { publicKey: "lWiRqp-JHI-566fpM" }
       );
-    // reset the form
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+
+      console.log(result.text);
+      setFormSubmitted(true);
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setFormError(true);
+    }
   };
 
   const handleChange = (e) => {
@@ -103,7 +96,9 @@ const ContactForm = () => {
         <p className="text-green-500">Thank you for your message!</p>
       )}
       {formError && (
-        <p className="text-red-500">Something went wrong. Please try again.</p>
+        <p className="text-red-500" role="alert">
+          Something went wrong. Please try again.
+        </p>
       )}
     </form>
   );
