@@ -190,7 +190,7 @@ export const projects = [
       },
     ],
     text: "an ecommerce dashboard with a clean interface for tracking sales, orders, customers, and product performance through responsive analytics views.",
-    url: "https://shawky-13.github.io/My-Dashboard/",
+    url: "https://dashboard130.netlify.app/",
   },
   {
     id: "0",
