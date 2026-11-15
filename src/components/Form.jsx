@@ -29,7 +29,7 @@ const ContactForm = () => {
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("EmailJS error:", error);
-      setFormError(true);
+      setFormError(error?.text || error?.message || "Unable to send your message.");
     }
   };
 
@@ -97,7 +97,7 @@ const ContactForm = () => {
       )}
       {formError && (
         <p className="text-red-500" role="alert">
-          Something went wrong. Please try again.
+          Something went wrong: {formError}
         </p>
       )}
     </form>
