@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
+
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/shokhafiz@gmail.com";
 
 const ContactForm = () => {
-  const form = useRef();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(null);
   const [formData, setFormData] = useState({
@@ -17,14 +17,25 @@ const ContactForm = () => {
     setFormError(null);
 
     try {
-      const result = await emailjs.sendForm(
-        "service_nt3oo48", // service-id
-        "template_l9vz4hb", // template-id
-        form.current,
-        { publicKey: "lWiRqp-JHI-566fpM" }
-      );
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: "New portfolio contact message",
+          _template: "table",
+          _captcha: "true",
+        }),
+      });
+      const result = await response.json();
 
-      console.log(result.text);
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Unable to send your message.");
+      }
+
       setFormSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -43,7 +54,6 @@ const ContactForm = () => {
 
   return (
     <form
-      ref={form}
       onSubmit={sendEmail}
       className="max-w-lg mx-auto bg-n-8/30 relative z-5 p-10"
     >

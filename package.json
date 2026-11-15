@@ -13,7 +13,6 @@
     "publish-all": "git add . && git commit -m 'update' && git push && npm run deploy"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
